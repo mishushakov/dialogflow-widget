@@ -65,7 +65,7 @@ if (process.env.NODE_ENV === 'production') {
     }),
     new UglifyJSPlugin({
       parallel: true,
-      sourceMap: true,
+      sourceMap: false,
       uglifyOptions: {
         ie8: false,
       }

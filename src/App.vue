@@ -358,7 +358,7 @@ export default {
                 this.query = ''
                 this.speech = 'Go ahead, im listening...' // <- reset query and speech
 
-                //window.scrollTo(0, document.body.scrollHeight) <- Uncomment this if you want autoscroll
+                window.scrollTo(0, document.body.scrollHeight) // <- Comment this if you want to disable autoscroll
             })
             .catch((err) => {
                 alert(err)

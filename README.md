@@ -2,7 +2,7 @@
 
 # Dialogflow Widget for Web
 
-This is an unofficial Web widget for Dialogflow, i built it, to support Google Assistant rich-responses and to delivery the most out of the Platform. The executable is around 300KB. You can load it using iframe or embed it with JavaScript
+This is an unofficial Web widget for Dialogflow, i built it, to support Google Assistant rich-responses and to delivery the most out of the Platform. The executable is around 100KB. You can load it using iframe or embed it with JavaScript
 
 
 ## What is supported
@@ -15,26 +15,28 @@ This is an unofficial Web widget for Dialogflow, i built it, to support Google A
 - Link chips
 - Combination of all above
 
-## What will be supported soon
-- Custom inputs and elements using custom payload
-- More animations and visual feedback
-- Support for Dialogflow API v2 & Enterprise Edition (Will be in a separate branch)
+This repo is synced with
+[dialogflow-web](http://www.github.com/MishUshakov/dialogflow-web) and uses same features and shared codebase
+
 
 # Get started
-Grab your token here in Dialogflow Console
+Grab your token in [Dialogflow Console](https://console.dialogflow.com)
 
 ![](https://imgur.com/mmB4jS2.png)
 
-## Embed using iframe
+## Embed it using iframe
 
 ```
 <iframe
     width="350"
     height="430"
-    src="https://mish.io/dialogflow-widget/#/YOUR-TOKEN-HERE">
-</iframe>
+    src="https://mish.io/dialogflow-widget/#/YOUR-TOKEN-HERE" />
 ```
 
 [DEMO](https://codepen.io/mishushakov/pen/NwJRZY?editors=1000)
+
+## Host it by yourself
+
+Visit [this page](https://github.com/MishUshakov/dialogflow-web) to learn meore
 
 ## Thank you, stay updated!

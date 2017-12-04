@@ -9,9 +9,7 @@
   },
   "dependencies": {
     "api-ai-javascript": "^2.0.0-beta.21",
-    "vue": "^2.2.1",
-    "vue-carousel": "^0.6.5",
-    "vue-router": "^3.0.1"
+    "vue-carousel": "^0.6.5"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
@@ -23,8 +21,10 @@
     "node-sass": "^4.5.0",
     "sass-loader": "^6.0.6",
     "uglifyjs-webpack-plugin": "^1.0.1",
+    "vue": "^2.5.9",
+    "vue-router": "^3.0.1",
     "vue-loader": "^13.5.0",
-    "vue-template-compiler": "^2.2.1",
+    "vue-template-compiler": "^2.5.9",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.2.0"
   }
