@@ -35,4 +35,6 @@ Grab your token here in Dialogflow Console
 </iframe>
 ```
 
+[DEMO](https://codepen.io/mishushakov/pen/NwJRZY?editors=1000)
+
 ## Thank you, stay updated!

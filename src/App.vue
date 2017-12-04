@@ -5,7 +5,7 @@
     <div class="query">
         <div class="wrapper" v-if="micro == false">
             <i class="material-icons iicon" @click="microphone(true)">mic</i>
-            <input aria-label="Ask me something" autocomplete="off" v-model="query" class="queryform" @keyup.enter="submit()" placeholder="Ask me something..." autofocus type="text">
+            <input aria-label="Ask me something" autocomplete="off" v-model="query" class="queryform" @keyup.enter="submit()" placeholder="Ask me something..." type="text">
             <i class="material-icons iicon t2s" @click="mute(true)" v-if="muted == false">volume_up</i>
             <i class="material-icons iicon t2s" @click="mute(false)" v-else>volume_off</i>
         </div>
