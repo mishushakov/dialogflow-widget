@@ -2,6 +2,8 @@
 
 # Dialogflow Widget for Web
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/MishUshakov/dialogflow-widget.svg)](https://greenkeeper.io/)
+
 This is an unofficial Web widget for Dialogflow, i built it, to support Google Assistant rich-responses and to delivery the most out of the Platform. The executable is around 100KB. You can load it using iframe or embed it with JavaScript
 
 
