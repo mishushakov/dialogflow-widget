@@ -18,7 +18,6 @@ This is an unofficial Web widget for Dialogflow, i built it, to support Google A
 This repo is synced with
 [dialogflow-web](http://www.github.com/MishUshakov/dialogflow-web) and uses same features and shared codebase
 
-
 # Get started
 Grab your token in [Dialogflow Console](https://console.dialogflow.com)
 
