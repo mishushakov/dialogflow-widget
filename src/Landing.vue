@@ -22,13 +22,34 @@
                         <i class="material-icons tokenicon">vpn_key</i>
                         <input type="password" class="mdc-textfield__input token" v-model="token" placeholder="Enter your token here"/>
                         <div class="mdc-text-field__bottom-line"></div>
+                        
+                        <br>
+
+                        <div class="mdc-switch">
+                            <input type="checkbox" v-model="mute" class="mdc-switch__native-control" role="switch">
+                            <div class="mdc-switch__background">
+                                <div class="mdc-switch__knob"></div>
+                            </div>
+                        </div>
+                        <label for="basic-switch">Mute Audio by default</label>
+
+                        <br>
+                        <br>
+
+                        <div class="mdc-switch">
+                            <input type="checkbox" v-model="bottom" class="mdc-switch__native-control" role="switch">
+                            <div class="mdc-switch__background">
+                                <div class="mdc-switch__knob"></div>
+                            </div>
+                        </div>
+                        <label for="basic-switch">Display input at the bottom</label>
                     </div>
 
                     <pre class="copypaste">
 &lt;iframe
     width="350"
     height="430"
-    src="https://mish.io/dialogflow-widget/#/{{token}}" /&gt;</pre>
+    src="https://mish.io/dialogflow-widget/#/{{token}}?mute={{mute}}&bottom={{bottom}}" /&gt;</pre>
 
                     <p class="mdc-text-field-helptext" aria-hidden="true">
                         Your token will not be saved anywhere. You can get it in <a class="flow" href="https://console.dialogflow.com">Dialogflow Dashboard</a>
@@ -46,7 +67,7 @@
                     <h1 class="dftext preview">Preview</h1>
                     <iframe
                         class="widgetframe"
-                        :src="'https://mish.io/dialogflow-widget/#/' + token" /> <!-- Replace my token with yours after #/ -->
+                        :src="'http://localhost:8080/#/' + token + '?mute=' + mute + '&bottom=' + bottom" /> <!-- Replace my token with yours after #/ -->
                 </div>
             </div>
         </div>
@@ -126,7 +147,9 @@ export default {
     name: 'landing',
     data: function(){
         return {
-            token: '9d686a47b1de48bab431e94750d1cd87'
+            token: '9d686a47b1de48bab431e94750d1cd87',
+            mute: false,
+            bottom: false
         }
     },
     methods: {

@@ -2,10 +2,10 @@
 <section id ="app">
 
     <!-- The input -->
-    <div class="query">
+    <div class="query" :class="{'bottom': bottom}">
         <div class="wrapper" v-if="micro == false">
             <i class="material-icons iicon" @click="microphone(true)">mic</i>
-            <input aria-label="Ask me something" autocomplete="off" v-model="query" class="queryform" @keyup.enter="submit()" placeholder="Ask me something..." autofocus type="text">
+            <input aria-label="Ask me something" autocomplete="off" v-model="query" class="queryform" @keyup.enter="submit()" placeholder="Ask me something..." type="text">
             <i class="material-icons iicon t2s" @click="mute(true)" v-if="muted == false">volume_up</i>
             <i class="material-icons iicon t2s" @click="mute(false)" v-else>volume_off</i>
         </div>
@@ -144,24 +144,25 @@
         </table>
 
         <br>
-        <p class="copyright" v-if="answers.length > 0" id="bottom">Proudly powered by <a href="https://mish.io">Ushakov</a> & <a href="https://dialogflow.com">Dialogflow</a></p>
+        <p class="copyright" :class="{'marged': bottom}" v-if="answers.length > 0" id="bottom">Proudly powered by <a href="https://mish.io">Ushakov</a> & <a href="https://dialogflow.com">Dialogflow</a></p>
 
     </main>
 </section>
 </template>
 
 <style lang="sass">
-@import url('https://fonts.googleapis.com/css?family=Roboto')
-
 $color: #2b303e
 
 \:root
-  --mdc-theme-primary: $color
+    --mdc-theme-primary: $color
 
 body
     margin: 0
     background-color: #F5F5F5
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', 'Google Sans', sans-serif
+
+.themed
+    color: $color !important
 
 .wrapper
     max-width: 500px
@@ -191,6 +192,9 @@ body
     z-index: 999
     position: fixed
     width: 100%
+
+.bottom
+    bottom: 0
 
 .queryform
     border: 0
@@ -293,24 +297,28 @@ td
     float: left
     margin-left: 10px
     padding: 10px
-    border: 2px rgba(0,0,0,0.5) solid
-    color: rgba(0,0,0,0.5)
-    border-radius: 6px
+    color: rgba(0,0,0,0.7)
+    background-color: white
+    border: 1.5px solid rgba(0,0,0,0.2)
+    border-radius: 50px
     cursor: pointer
     animation: controls .25s linear
 
 .suggestion:active
-    border: 2px rgba(0,0,0,1) solid
     color: rgba(0,0,0,1)
+
+.suggestion:hover
+    color: $color
+    border: 1.5px solid $color
 
 .suggestion.link
     color: white
     background-color: $color
-    border: 2px $color solid
+    border: 1px solid $color
 
 .suggestion.link:active
     background-color: darken($color, 10%)
-    border: 2px darken($color, 10%) solid
+    border: 1px darken($color, 10%) solid
 
 .mdc-list-item__start-detail
     border-radius: 50%
@@ -341,7 +349,9 @@ td
 .copyright a:hover
     color: $color
     border-bottom: 2px solid $color
-    
+
+.marged
+    margin-bottom: 55px
 </style>
 
 <script>
@@ -359,11 +369,19 @@ export default {
             speech: 'Go ahead, im listening...',
             micro: false,
             muted: false,
-            online: navigator.onLine
+            online: navigator.onLine,
+            bottom: false
         }
     },
     created(){
         client = new ApiAiClient({accessToken: this.$route.params.token}) //create client
+        
+        if(this.$route.query.mute){
+            this.muted = JSON.parse(this.$route.query.mute)
+        }
+        if(this.$route.query.bottom){
+            this.bottom = JSON.parse(this.$route.query.bottom)
+        }
     },
     watch: {
         answers: function(val){
