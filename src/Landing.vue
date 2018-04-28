@@ -67,7 +67,7 @@
                     <h1 class="dftext preview">Preview</h1>
                     <iframe
                         class="widgetframe"
-                        :src="'http://localhost:8080/#/' + token + '?mute=' + mute + '&bottom=' + bottom" /> <!-- Replace my token with yours after #/ -->
+                        :src="'https://mish.io/dialogflow-widget/#/' + token + '?mute=' + mute + '&bottom=' + bottom" /> <!-- Replace my token with yours after #/ -->
                 </div>
             </div>
         </div>
