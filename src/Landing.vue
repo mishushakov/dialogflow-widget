@@ -44,7 +44,7 @@
                         </div>
                         <label for="basic-switch">Display input at the bottom</label>
                     </div>
-                    
+
                     <pre class="copypaste">
 &lt;iframe
     width="350"
@@ -67,7 +67,7 @@
                     <h1 class="dftext preview">Preview</h1>
                     <iframe
                         class="widgetframe"
-                        :src="'https://mishushakov.github.io/dialogflow-widget' + token + '?mute=' + mute + '&bottom=' + bottom" /> <!-- Replace my token with yours after #/ -->
+                        :src="'https://mishushakov.github.io/dialogflow-widget/#/' + token + '?mute=' + mute + '&bottom=' + bottom" /> <!-- Replace my token with yours after #/ -->
                 </div>
             </div>
         </div>
