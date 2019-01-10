@@ -13,9 +13,8 @@
             <div class="mdc-layout-grid__inner">
                 <div class="mdc-layout-grid__cell--span-6">
                     <h1 class="dftext">You use Dialogflow and want more?</h1>
-                    <p>🚨 DEPRECATION WARNING: THIS PROJECT IS NO LONGER SUPPORTED, MOVE TO <a href="https://github.com/MishUshakov/dialogflow-web-v2">V2</a></p>
+                    <h4>🚨 DEPRECATION WARNING: THIS PROJECT IS NO LONGER SUPPORTED, MOVE TO <a href="https://github.com/MishUshakov/dialogflow-web-v2">V2</a></h4>
                     
-                    <br>
                     <br>
 
                     <div class="mdc-textfield">

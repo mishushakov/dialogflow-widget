@@ -1,6 +1,6 @@
 ![](https://imgur.com/YkOoS4h.png)
 
-🚨 DEPRECATION WARNING: THIS PROJECT IS NO LONGER SUPPORTED, MOVE TO [V2](https://github.com/MishUshakov/dialogflow-web-v2)
+#### 🚨 DEPRECATION WARNING: THIS PROJECT IS NO LONGER SUPPORTED, MOVE TO [V2](https://github.com/MishUshakov/dialogflow-web-v2)
 
 # Dialogflow Widget for Web
 
