@@ -1,9 +1,10 @@
 ![](https://imgur.com/YkOoS4h.png)
 
+🚨 DEPRECATION WARNING: THIS PROJECT IS NO LONGER SUPPORTED, MOVE TO [V2](https://github.com/MishUshakov/dialogflow-web-v2)
+
 # Dialogflow Widget for Web
 
 This is an unofficial Web widget for Dialogflow, i built it, to support Google Assistant rich-responses and to delivery the most out of the Platform. The executable is around 100KB. You can load it using iframe or embed it with JavaScript
-
 
 ## What is supported
 - Basic reply (is being displayed and spoken)

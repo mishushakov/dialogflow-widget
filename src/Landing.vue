@@ -13,8 +13,8 @@
             <div class="mdc-layout-grid__inner">
                 <div class="mdc-layout-grid__cell--span-6">
                     <h1 class="dftext">You use Dialogflow and want more?</h1>
-                    <h1 class="mdc-typography--subheading2">Then you are on the right page. Dialogflow Widget for Web enables you ultimate google assistant experience with its look and feel just in seconds! And guess what? It's free!</h1>
-
+                    <p>🚨 DEPRECATION WARNING: THIS PROJECT IS NO LONGER SUPPORTED, MOVE TO <a href="https://github.com/MishUshakov/dialogflow-web-v2">V2</a></p>
+                    
                     <br>
                     <br>
 
@@ -145,7 +145,7 @@ export default {
     name: 'landing',
     data: function(){
         return {
-            token: '9d686a47b1de48bab431e94750d1cd87',
+            token: 'af1b011083f44449bf9a085bcddb60e9',
             mute: false,
             bottom: false
         }
